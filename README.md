@@ -1,16 +1,13 @@
 
-# Vagrantfile and Scripts to Automate Kubernetes Setup using Kubeadm [Practice Environemnt for CKA/CKAD and CKS Exams]
+# Vagrantfile and Scripts to Automate Kubernetes Setup using Kubeadm [Practice Environemnt that could be used for CKA/CKAD and CKS Exams]
 
 ## Documentation
 
-Refer this link for documentation: https://devopscube.com/kubernetes-cluster-vagrant/
-
-If you are preparing for CKA, CKAD or CKS exam, save $45 using code **DCUBEOFFER** at https://kube.promo/latest
 
 ## Prerequisites
 
 1. Working Vagrant setup
-2. 8 Gig + RAM workstation as the Vms use 3 vCPUS and 4+ GB RAM
+2. 8 Gig + RAM workstation as the Vms use 4 vCPUS and 4+ GB RAM
  
 ## Usage/Examples
 
@@ -25,7 +22,7 @@ vagrant up
 ## Set Kubeconfig file varaible.
 
 ```shell
-cd vagrant-kubeadm-kubernetes
+cd vagrant-cka
 cd configs
 export KUBECONFIG=$(PWD)/config
 ```
@@ -70,7 +67,3 @@ vagrant up
 vagrant destroy -f
 ```
 
-## Centos & HA based Setup
-
-If you want Centos based setup, please refer https://github.com/marthanda93/VAAS
-  
